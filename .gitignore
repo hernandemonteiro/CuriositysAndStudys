@@ -1,0 +1,15 @@
+./laravelAPI/node_modules
+./laravelAPI/public/build
+./laravelAPI/public/hot
+./laravelAPI/public/storage
+./laravelAPI/storage/*.key
+./laravelAPI/vendor
+./laravelAPI/.env.backup
+./laravelAPI/.phpunit.result.cache
+./laravelAPI/Homestead.json
+./laravelAPI/Homestead.yaml
+./laravelAPI/auth.json
+./laravelAPI/npm-debug.log
+./laravelAPI/yarn-error.log
+./laravelAPI/.idea
+./laravelAPI/.vscode
