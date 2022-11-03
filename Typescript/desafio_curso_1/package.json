@@ -1,0 +1,10 @@
+{
+  "name": "desafio_curso_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "compile": "npx tsc ./index.ts --removeComments"
+  }
+}
