@@ -1,10 +1,16 @@
-<?php echo "<pre>";
+<?php
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     http_response_code(404);
-    print_r(["hernande"]);
-    print_r($_POST);
-    print_r($_SERVER);
+    echo json_encode(array(
+        array(
+            "nome" => "Hernande",
+            "idade" => 24
+
+        ),
+        array(
+            "nome" => "Outro"
+        )
+    ));
 } else {
     print_r($_SERVER);
 }
-echo "</pre>";
