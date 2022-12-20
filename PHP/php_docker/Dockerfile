@@ -5,5 +5,5 @@ COPY ./vhost.conf /etc/apache2/sites-available/000-default.conf
 
 WORKDIR /var/www/html
 
-# RUN chown -R www-data:www-data /var/www/html \
-#     && a2enmod rewrite && service apache2 restart
+RUN chown -R www-data:www-data /var/www/html \
+    && a2enmod rewrite && service apache2 restart
