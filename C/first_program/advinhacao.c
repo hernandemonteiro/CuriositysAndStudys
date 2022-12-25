@@ -20,7 +20,12 @@ int main()
         int chancesDeAcertar = NUMERO_DE_TENTATIVAS - i;
         int numeroMaiorQueSecreto = chute > numeroSecreto;
 
-        printf("Você ainda tem %d chances de acertar!\n", chancesDeAcertar);
+        if (chute < 0)
+        {
+            printf("O numero chutado não pode ser negativo!\n");
+            i--;
+            continue;
+        }
 
         if (acertouNumero)
         {
@@ -29,10 +34,12 @@ int main()
         }
         else if (numeroMaiorQueSecreto)
         {
+            printf("Você ainda tem %d chances de acertar!\n", chancesDeAcertar);
             printf("Seu numero é maior que o numero secreto!\n");
         }
         else
         {
+            printf("Você ainda tem %d chances de acertar!\n", chancesDeAcertar);
             printf("Seu numero é menor que o numero secreto!\n");
         }
     }
