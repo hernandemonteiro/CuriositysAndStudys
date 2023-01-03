@@ -12,7 +12,7 @@
             <legend>Nova tarefa</legend>
             <label>
                 Tarefa:
-                <input type="text" name="nome" />
+                <input required type="text" name="nome" />
             </label>
             <input type="submit" value="Cadastrar" />
         </fieldset>
